@@ -1,0 +1,23 @@
+- name: "Project One"
+  description: >-
+    Short, punchy description of what this project does and why it matters.
+  repo: "https://github.com/mddiallo/project-one"
+  demo: "https://example.com"
+  tags: [Python, Django, PostgreSQL]
+  image: "/assets/img/project-one.png"
+
+- name: "Project Two"
+  description: >-
+    Another project description — keep it under two lines for the card layout.
+  repo: "https://github.com/mddiallo/project-two"
+  demo: ""
+  tags: [TypeScript, React, Node.js]
+  image: "/assets/img/project-two.png"
+
+- name: "Project Three"
+  description: >-
+    Third project description. Replace these placeholders with your real work.
+  repo: "https://github.com/mddiallo/project-three"
+  demo: ""
+  tags: [Go, Docker]
+  image: "/assets/img/project-three.png"

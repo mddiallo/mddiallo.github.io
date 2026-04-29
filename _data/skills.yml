@@ -1,0 +1,29 @@
+- category: Languages
+  items:
+    - Python
+    - JavaScript / TypeScript
+    - Java
+    - Go
+    - SQL
+
+- category: Frameworks & Libraries
+  items:
+    - React
+    - Node.js / Express
+    - Django
+    - Spring Boot
+
+- category: Tools & DevOps
+  items:
+    - Git & GitHub
+    - Docker
+    - GitHub Actions
+    - Linux
+    - VS Code
+
+- category: Databases
+  items:
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - Redis

@@ -1,0 +1,28 @@
+<section id="projects" class="section alt">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      {%- for p in site.data.projects -%}
+        <article class="project-card">
+          <h3>{{ p.name }}</h3>
+          <p>{{ p.description }}</p>
+          {%- if p.tags -%}
+            <ul class="chips small">
+              {%- for t in p.tags -%}
+                <li class="chip">{{ t }}</li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+          <div class="project-links">
+            {%- if p.repo and p.repo != "" -%}
+              <a href="{{ p.repo }}" target="_blank" rel="noopener">Code</a>
+            {%- endif -%}
+            {%- if p.demo and p.demo != "" -%}
+              <a href="{{ p.demo }}" target="_blank" rel="noopener">Demo</a>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
