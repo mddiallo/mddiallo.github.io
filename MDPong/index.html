@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDPong — Le Pong rétro, version néon</title>
+<meta name="description" content="MDPong : le Pong d'arcade revisité en néon sur iPhone. Trois modes de jeu, quatre difficultés, meilleurs scores conservés. Gratuit et hors connexion.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    background: #08060f;
+    color: #e8e6ff;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .hero {
+    padding: 5rem 1.25rem 4rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% -10%, #2a1560 0%, #08060f 60%);
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  h1 {
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    margin: 0;
+    letter-spacing: -0.04em;
+    background: linear-gradient(100deg, #6ff2ff, #ff5fa2);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tagline { font-size: 1.15rem; color: #b9b4e0; margin: .5rem 0 2rem; }
+  .badge {
+    display: inline-block; margin: .25rem;
+    padding: .45rem .9rem; border-radius: 999px;
+    background: rgba(111,242,255,.12); border: 1px solid rgba(111,242,255,.35);
+    color: #6ff2ff; font-size: .85rem; font-weight: 600;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h2 { color: #ff5fa2; font-size: 1.3rem; margin: 2.5rem 0 .75rem; }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .card {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 18px; padding: 1.15rem 1.25rem;
+  }
+  .card h3 { margin: 0 0 .35rem; font-size: 1.02rem; color: #6ff2ff; }
+  .card p { margin: 0; color: #b9b4e0; font-size: .93rem; }
+  a { color: #6ff2ff; }
+  footer {
+    border-top: 1px solid rgba(255,255,255,.07);
+    padding: 2rem 1.25rem 3rem; text-align: center;
+    color: #7d78a8; font-size: .88rem;
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>MDPong</h1>
+    <p class="tagline">Le Pong rétro, version néon — sur iPhone.</p>
+    <span class="badge">Gratuit</span>
+    <span class="badge">Hors connexion</span>
+    <span class="badge">Sans achat intégré</span>
+    <span class="badge">120 fps</span>
+  </div>
+
+  <main>
+    <h2>Trois façons de jouer</h2>
+    <div class="grid">
+      <div class="card"><h3>Classique</h3><p>Le duel contre l’ordinateur. Premier au score gagne — de 5 à 21 points.</p></div>
+      <div class="card"><h3>Survie</h3><p>Trois vies, une balle qui accélère sans fin. Jusqu’où irez-vous ?</p></div>
+      <div class="card"><h3>Duel</h3><p>Deux joueurs, un seul iPhone. Chacun sa moitié d’écran.</p></div>
+    </div>
+
+    <h2>Ce qui fait la différence</h2>
+    <div class="grid">
+      <div class="card"><h3>Physique maîtrisée</h3><p>L’angle de renvoi dépend du point d’impact sur la raquette. Effet de spin inclus.</p></div>
+      <div class="card"><h3>IA crédible</h3><p>Quatre niveaux : elle anticipe, se trompe parfois, et devient redoutable en Insensé.</p></div>
+      <div class="card"><h3>Vos records</h3><p>Top 10 par mode, conservé sur l’appareil, avec durée et plus long échange.</p></div>
+      <div class="card"><h3>Confort</h3><p>Deux styles de contrôle, son et vibrations réglables, respect de « Réduire les animations ».</p></div>
+    </div>
+
+    <h2>Assistance</h2>
+    <p>Un bug, une idée, une question ? Écrivez-nous à
+      <a href="mailto:contact@mdpong.app">contact@mdpong.app</a> — nous répondons à tout le monde.</p>
+
+    <h2>Confidentialité</h2>
+    <p>MDPong ne collecte aucune donnée personnelle. Vos scores restent sur votre appareil.<br>
+      <a href="./confidentialite.html">Politique de confidentialité (français)</a> ·
+      <a href="./privacy.html">Privacy policy (English)</a></p>
+  </main>
+
+  <footer>
+    © 2026 Mamadou Diallo — MDPong. Pong est un concept d’arcade tombé dans le domaine public du jeu vidéo ;
+    cette application en est une réinterprétation originale.
+  </footer>
+</body>
+</html>
