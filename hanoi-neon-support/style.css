@@ -5,3 +5,19 @@ a { color: #a5ff20; }
 nav { display: flex; gap: 24px; flex-wrap: wrap; }
 section { margin: 36px 0; padding: 24px; border: 1px solid #244047; border-radius: 16px; }
 footer { margin-top: 36px; color: #aaa; }
+.marketing-page header { margin: 24px 0 36px; text-align: center; }
+.marketing-page h1 { margin: 16px 0; font-size: clamp(2.6rem, 9vw, 4.5rem); letter-spacing: -0.04em; text-shadow: 0 0 24px #00f2ff66; }
+.marketing-page .eyebrow { color: #a5ff20; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.marketing-page .tower-art { display: flex; align-items: flex-end; justify-content: space-around; gap: 16px; height: 140px; margin: 36px 0; }
+.marketing-page .tower { position: relative; display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; padding-bottom: 8px; border-bottom: 4px solid #00f2ff; border-radius: 4px; }
+.marketing-page .tower::before { content: ""; position: absolute; top: 0; bottom: 0; left: calc(50% - 2px); width: 4px; border-radius: 4px; background: #00f2ff; box-shadow: 0 0 12px #00f2ff66; }
+.marketing-page .disk { z-index: 1; height: 18px; margin: 3px 0; border-radius: 8px; background: linear-gradient(90deg, #00f2ff, #a5ff20); box-shadow: 0 0 12px #a5ff2066; }
+.marketing-page .disk-small { width: 35%; }
+.marketing-page .disk-medium { width: 50%; }
+.marketing-page .disk-large { width: 65%; }
+.marketing-page .disk-largest { width: 80%; }
+.marketing-page .features { padding-left: 20px; }
+.marketing-page .features li { margin: 12px 0; }
+.marketing-page .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+.marketing-page .button { display: inline-block; padding: 10px 18px; border-radius: 10px; background: #00f2ff; color: #050514; font-weight: 700; text-decoration: none; }
+.marketing-page .button:hover, .marketing-page .button:focus-visible { background: #a5ff20; }
