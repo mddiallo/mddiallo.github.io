@@ -1,0 +1,54 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  background: #050514;
+  color: #eee;
+  line-height: 1.65;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem max(1rem, env(safe-area-inset-right)) 2rem max(1rem, env(safe-area-inset-left));
+  overflow-wrap: anywhere;
+}
+
+h1, h2 { color: #00f2ff; text-wrap: balance; }
+h1 { margin: 0.25rem 0 1rem; font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.25; }
+h2 { margin-top: 0; }
+h3 { margin-top: 1.75rem; font-size: 1.1rem; line-height: 1.4; text-wrap: pretty; }
+[id] { scroll-margin-top: 1rem; }
+
+a {
+  color: #a5ff20;
+  text-underline-offset: 0.2em;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: #a5ff2040;
+}
+
+a:hover { color: #fff; }
+a:focus-visible { outline: 3px solid #00f2ff; outline-offset: 4px; border-radius: 2px; }
+
+nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 1rem 0; }
+nav a { display: inline-block; min-height: 44px; padding: 0.5rem 0.25rem; }
+nav a[aria-current="page"] { color: #fff; font-weight: 700; text-decoration-thickness: 0.15em; }
+
+.app-name { margin: 0; font-weight: 700; }
+.updated, footer { color: #bbb; }
+.language { margin: 2rem 0; padding: clamp(1rem, 3vw, 1.5rem); border: 1px solid #244047; border-radius: 1rem; }
+.notice { padding-left: 1rem; border-left: 3px solid #00f2ff; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #244047; }
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.5rem 0.75rem;
+  background: #050514;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible { transform: translateY(0); }
